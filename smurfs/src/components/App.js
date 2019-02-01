@@ -15,9 +15,10 @@ class App extends Component {
     return (
       <div className="App">
         <p>SMURFS! 2.0 W/ Redux</p>
+        <h1>Smurf Village</h1>
         
-        <Smurfs />
         <AddNewSmurf />
+        <Smurfs />
       </div>
     );
   }

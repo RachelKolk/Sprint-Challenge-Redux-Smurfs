@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './smurfform.css';
+
 function SmurfForm(props) {
 
     const handleClick = e => {
@@ -9,7 +11,7 @@ function SmurfForm(props) {
 
     return (
         <div>
-            <form>
+            <form className="Form">
 
                 <input className="SmurfName"
                     type="text"
@@ -35,7 +37,7 @@ function SmurfForm(props) {
                     value={props.smurf.height}
                 />
 
-                <button onClick={handleClick}>Add Smurf to Village</button>
+                <p className="Button" onClick={handleClick}>Add Smurf to Village</p>
             </form>
         </div>
     );
