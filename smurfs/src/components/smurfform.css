@@ -1,0 +1,30 @@
+.Form {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.SmurfName {
+    line-height: 1.5rem;
+    border-radius: 4px;
+    margin: 2%;
+   
+}
+
+.SmurfAge {
+    line-height: 1.5rem;
+    border-radius: 4px;
+    margin: 2%;
+}
+
+.SmurfHeight {
+    line-height: 1.5rem;
+    border-radius: 4px;
+    margin: 2%;
+}
+
+.Button {
+    line-height: 1.5rem;
+    border-radius: 6px;
+    border: 1 px solid blue;
+}
