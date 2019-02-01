@@ -5,7 +5,10 @@
 import { 
   FETCHING_SMURFS,
   SMURFS_FETCHED,
-  FETCH_SMURF_FAILURE
+  FETCH_SMURF_FAILURE,
+  ADDING_SMURF,
+  SMURF_ADDED,
+  ADD_SMURF_FAILURE
 } from "../actions";
 
 
@@ -38,12 +41,20 @@ const initialState = {
 
 function reducer(state = initialState, action) {
   switch(action.type) {
+
     case SMURFS_FETCHED:
     return {
       ...state,
       smurfs: action.payload,
       fetchingSmurfs: false,
     };
+
+    case SMURF_ADDED:
+    return {
+      ...state,
+      smurfs: action.payload,
+      addingSmurf: false,
+    }
 
     default:
     return state;
